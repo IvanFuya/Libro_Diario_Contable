@@ -1,0 +1,83 @@
+:root{
+    --background-blue: #1a73e8;
+    --white: #fff;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container-btn{
+    display: grid;
+    justify-content: end;
+}
+.btn-principal{
+    height: 40px;
+    width: 120px;
+    margin-right: 0;
+    background-color: var(--background-blue);
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contenedor-registro-diario{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr repeat(3, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.item-titulo{
+    background-color: var(--background-blue);
+    color: var(--white);
+}
+
+.invisible{
+    display: none !important;
+}
+/* Estilos pop Up */
+.container-transp-popUp{
+    display: grid;
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, .7)
+}
+.container-nuevo-registro{
+    border: 2px solid var(--background-blue);
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--white);
+}
+.item-titulo-nuevo{
+    margin: 0;
+    padding: 0 20px;
+    grid-column: 1 / 3;
+    color: var(--white);
+    background-color: var(--background-blue);
+}
+
+.container-nuevo-registro label,
+.container-nuevo-registro input{
+    padding: 4px 20px ;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.btnPopUp{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0;
+    grid-column: 1 / 3;
+}

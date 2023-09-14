@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300&family=Quicksand:wght@300;500;700&family=Raleway:wght@400;600&display=swap" 
+rel="stylesheet">
+    <title>Libro Contable</title>
+</head>
+<body>
+    <div class=" invisible container-transp-popUp">
+        <div class="container-nuevo-registro">
+            <div class="item-titulo-nuevo">
+               <h2>Nuevo Registro</h2>
+            </div>
+            <label for="input-fecha">Fecha: </label>
+            <input type="date" id="inputFecha">
+            <label for="input-concepto">Concepto: </label>
+            <input type="text" id="inputConcepto">
+            <label for="input-entradas">Entradas: </label>
+            <input type="number" id="inputEntradas">
+            <label for="input-salidas">Salidas: </label>
+            <input type="number" id="input-salidas">
+            <div class="btnPopUp">
+                <input type="button" class="btn-principal" id="ibtnCancelar" value="Cancelar">
+                <input type="button" class="btn-principal" id="ibtnAceptar" value="Aceptar">
+            </div>
+        </div>
+    </div>
+    <h1 class="titulo">Libro Contable</h1>
+
+    <div class="container-btn">
+        <input type="button" class="btn-principal" id="btnNuevoRegistro" value="Nuevo Registro">
+    </div>
+    <div class="contenedor-registro-diario">
+        <div class="item-titulo">Fecha</div>
+        <div class="item-titulo">Concepto</div>
+        <div class="item-titulo">Entradas</div>
+        <div class="item-titulo">Salidas</div>
+        <div class="item-titulo">Saldo</div>
+    </div>
+   
+    
+
+</body>
+<script src="main.js"></script>
+</html>
